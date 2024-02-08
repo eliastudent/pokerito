@@ -29,11 +29,6 @@ public class RookPaperScissors {
    * 
    * @return a choice (String).
    *
-   *         Inside the function:
-   *         1. Picks a random number between 0 and 2.
-   *         2. if 1: return the choice 'rock'
-   *         if 2: return the choice 'paper'
-   *         if 3: return the choice 'scissors'
    */
 
   public static String computerChoice() {
@@ -90,11 +85,6 @@ public class RookPaperScissors {
    * @param computerChoice (String)
    * @param result         (String)
    *
-   *                       Inside the function: <------
-   *                       1. prints everything:
-   *                       -- prints: You chose: <your choice>
-   *                       -- prints: The computer chose: <computer choice>
-   *                       -- prints: <result>
    */
 
   public static void printResult(String yourChoice, String computerChoice, String Result) {
