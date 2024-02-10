@@ -4,7 +4,6 @@ public class Pokerito {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    int numberCard = 0;
 
     textRolls();
     String playerAnswer = scanner.nextLine();
