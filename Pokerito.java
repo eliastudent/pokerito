@@ -62,7 +62,7 @@ public class Pokerito {
         "- Then, the dealer will draw five cards (the river)\n" + //
         "- The player with the most river matches wins!\n" + //
         "- If the matches are equal, everyone's a winner!\n" + //
-        "- Ready? Type YES if you are.\n" + //
+        "- Ready? Type YES if you are redy.\n" + //
         "");
   }
 
