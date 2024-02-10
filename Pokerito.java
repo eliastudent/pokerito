@@ -60,7 +60,7 @@ public class Pokerito {
         "- There are two players, you and the computer.\n" + //
         "- The dealer will give each player one card.\n" + //
         "- Then, the dealer will draw five cards (the river)\n" + //
-        "- The player with the most river matches wins!\n" + //
+        "- The player with the most river  matches wins!\n" + //
         "- If the matches are equal, everyone's a winner!\n" + //
         "- Ready? Type YES if you are redy.\n" + //
         "");
