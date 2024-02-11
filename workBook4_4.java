@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//animals drawing
 public class workBook4_4 {
 
   public static void main(String[] args) {
