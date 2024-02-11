@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// Pokerito it's game like poker just smaller
 
 public class Pokerito {
 
@@ -20,18 +21,15 @@ public class Pokerito {
       int matchPlayer = 0;
       int matchComputer = 0;
       for (int i = 0; i < 5; i++) {
-        String playerOutput = scanner.nextLine();
-        if (playerOutput.equals("")) {
-          System.out.println("card " + (i + 1) + ":\n");
-          String matchCards = randomCard();
-          System.out.println(matchCards);
+        scanner.nextLine();
+        System.out.println("card " + (i + 1) + ":\n");
+        String matchCards = randomCard();
+        System.out.println(matchCards);
 
-          if (computerCard1.equals(matchCards) || computerCard2.equals(matchCards)) {
-            matchComputer++;
-          } else if (playerCard1.equals(matchCards) || playerCard2.equals(matchCards)) {
-            matchPlayer++;
-          }
-
+        if (computerCard1.equals(matchCards) || computerCard2.equals(matchCards)) {
+          matchComputer++;
+        } else if (playerCard1.equals(matchCards) || playerCard2.equals(matchCards)) {
+          matchPlayer++;
         }
 
       }
@@ -54,7 +52,7 @@ public class Pokerito {
 
   }
 
-  public static void textRolls() {
+  private static void textRolls() {
     System.out.println("Let's play Pokerito. Type anything when you're ready.\n" + //
         "It's like Poker, but a lot simpler.\n" + //
         "- There are two players, you and the computer.\n" + //
@@ -66,7 +64,7 @@ public class Pokerito {
         "");
   }
 
-  public static String randomCard() {
+  private static String randomCard() {
     int randomNum = (int) (Math.random() * 13) + 1;
     String fff = "333";
 
