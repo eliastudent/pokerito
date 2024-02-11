@@ -1,5 +1,6 @@
 import java.util.Scanner;
 // Pokerito it's game like poker just smaller
+//verison 1.1
 
 public class Pokerito {
 
