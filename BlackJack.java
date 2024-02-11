@@ -61,7 +61,7 @@ public class BlackJack {
       }
       System.out.println("Dealer's total is: " + resultDealerPoints);
       if (resultDealerPoints > 21) {
-        System.out.println("Bust! Dealer loses.");
+        System.out.println("Bust! Dealer loses. you win!");
 
       } else if (resultDealerPoints > resultPlayerPoints) {
         System.out.println("Dealer win!");
