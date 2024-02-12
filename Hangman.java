@@ -15,8 +15,6 @@ public class Hangman {
 
   public static void main(String[] args) {
 
-    // System.out.println(" Guess: ");
-    // char guess = ' ';
     int random = randomString();
     String randomWord = words[random];
     int turnFalseOff = 0;
@@ -28,8 +26,6 @@ public class Hangman {
       faceWord[i] = '_';
 
     }
-
-    // int lengthWord = randomWord.length();
 
     while (lose) {
       System.out.print(gallows[numOfMisses]);
@@ -97,108 +93,20 @@ public class Hangman {
 
       }
 
-      // testEqual(guess, randomWord);
       for (int i = 0; i < faceWord.length; i++) {
         if (faceWord[i] == randomWord.charAt(i)) {
           turnFalseOff++;
         }
 
       }
-
-      // System.out.println(drawHangman(input));
-      // System.out.println(gallows[1]);
-      // System.out.println(words.length);
     }
 
   }
-
-  // private static boolean testEqual(char a, String randomStr) {
-  // for (int i = 0; i < randomStr.length(); i++) {
-  // if (a == randomStr.charAt(i)) {
-
-  // return true;
-
-  // }
-
-  // }
-
-  // }
 
   private static int randomString() {
     int randomNum = (int) (Math.random() * 64);
     return randomNum;
   }
-
-  // private static String drawHangman(int option) {
-  // switch (option) {
-  // case 0:
-  // return "+---+\n" +
-  // "| |\n" +
-  // " |\n" +
-  // " |\n" + // if the user didn't miss any guesses.
-  // " |\n" +
-  // " |\n" +
-  // "=========\n";
-
-  // case 1:
-  // return "+---+\n" +
-  // "| |\n" +
-  // "O |\n" + // if the user missed one guess.
-  // " |\n" +
-  // " |\n" +
-  // " |\n" +
-  // "=========\n";
-
-  // case 2:
-  // return "+---+\n" +
-  // "| |\n" +
-  // "O |\n" + // if the user missed two guesses.
-  // "| |\n" +
-  // " |\n" +
-  // " |\n" +
-  // "=========\n";
-
-  // case 3:
-  // return " +---+\n" +
-  // " | |\n" +
-  // " O |\n" + // if the user missed three guesses.
-  // "/| |\n" +
-  // " |\n" +
-  // " |\n" +
-  // " =========\n";
-
-  // case 4:
-  // return " +---+\n" +
-  // " | |\n" +
-  // " O |\n" +
-  // "/|\\ |\n" + // if the user missed four guesses.
-  // " |\n" +
-  // " |\n" +
-  // " =========\n";
-
-  // case 5:
-  // return " +---+\n" +
-  // " | |\n" +
-  // " O |\n" +
-  // "/|\\ |\n" + // if the user missed five guesses.
-  // "/ |\n" +
-  // " |\n" +
-  // " =========\n";
-
-  // case 6:
-  // return " +---+\n" +
-  // " | |\n" +
-  // " O |\n" +
-  // "/|\\ |\n" + // if the user missed six guesses.
-  // "/ \\ |\n" +
-  // " |\n" +
-  // " =========\n";
-
-  // default:
-  // return "erorr";
-  // }
-
-  // }
 
   public static String[] gallows = { // 7 length
       "+---+\n" +
